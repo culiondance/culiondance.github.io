@@ -1,0 +1,117 @@
+body, html {
+	height: 100%;
+	font-family: 'Khula', sans-serif;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.6em;	
+
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-size: 54px;
+	letter-spacing: 10px;
+}
+
+.col-md-6 {
+	padding: 35px;
+}
+
+.navbar {
+	position: absolute;
+	width: 100%;
+	margin-top: 20px;
+	background-color: transparent !important;
+	border-color: transparent;
+	background-image: none;
+	box-shadow: none;	
+}
+
+.navbar li a{
+	font-family: 'Khula', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #ffffff;
+}
+
+.nav > li > a:hover, .nav > li > a:focus{
+	background: transparent;
+	border-bottom: 1px solid #ffffff;
+	color: #ffffff;
+
+}
+
+.landing {
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+	background: url(../assets/img/landing.jpg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing-content {
+	padding: 5%;
+	padding-top: 25%;
+}
+
+.landing-content h1 {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-size: 96px;
+	letter-spacing: 10px;
+	line-height: .8em;
+}
+
+.landing-content h2 {
+	font-family: 'Khula', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 36px;
+	letter-spacing: 17px;
+}
+
+.landing-content .btn {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #ffffff;
+	letter-spacing: 7px;	
+	line-height: 1.3em;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	margin: 5px;
+}
+
+.btn:hover, .btn:focus{
+	background: #ffffff;
+	color: #333;
+}
+
+.content-block {
+	margin: 10% 0% 10% 0%;
+	font-family: 'Khula', sans-serif;
+	font-size: 18px;
+	line-height: 1.6em;	
+	padding-left: 30px;
+	padding-right: 30px;
+
+}
+
+.content-block img {
+	margin: 15px;
+}
+
+.row h1 {
+	text-align: center;
+}
