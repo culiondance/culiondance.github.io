@@ -33,5 +33,19 @@
   opacity: 0.5;
   border: 1px solid blue;
 }
+.land-img img {
+  width: 100%;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  display: inline-block;
+}
 
 /*# sourceMappingURL=starter-template2.css.map */
