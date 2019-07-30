@@ -36,7 +36,6 @@
 .land-img img {
   width: 100%;
   margin: 0 auto;
-  opacity: 1;
 }
 
 .nav-container {
@@ -46,6 +45,19 @@
 
 .nav-item {
   display: inline-block;
+}
+
+.content-header, .content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.content-header {
+  width: 30%;
+}
+
+.content {
+  width: 50%;
 }
 
 /*# sourceMappingURL=starter-template2.css.map */
