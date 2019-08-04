@@ -5,69 +5,97 @@ $temp-mid-gray: #b0b0b0
 // fonts
 
 // h1
-// 	// font-family: 'Work Sans', sans-serif
-// 	// font-size: 72px
-// 	font-family: nimbus-sans-extended, sans-serif
-// 	font-weight: 900
-// 	font-style: normal
-// 	font-size: 72px
-// 	text-transform: uppercase
+//  // font-family: 'Work Sans', sans-serif
+//  // font-size: 72px
+//  font-family: nimbus-sans-extended, sans-serif
+//  font-weight: 900
+//  font-style: normal
+//  font-size: 72px
+//  text-transform: uppercase
 
 // .landing
-// 	h1
-// 		text-align: justified
+//  h1
+//      text-align: justified
+
+// STRUCTURAL STYLES
+
+// original bootstraps
+.container, .container-fluid
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
 
 .container
-	width: 70%
+    width: 80%
 
 .container-fluid
-	background-color: $temp-lite-gray
-	border: 1px solid blue
-	height: 100vh
+    background-color: $temp-lite-gray
+    border: 1px solid blue
+    height: 100vh
+
+.grid
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+    align-items: center
+
+.grid-element
+    border: 1px solid blue
+
 
 .landing
-	background-color: $temp-mid-gray
-	border: 1px solid blue
-	h1, h2, p
-		text-transform: uppercase
-		text-align: center
+    width: 85%
+    background-color: $temp-mid-gray
+    border: 1px solid blue
+    h1, h2, p
+        text-transform: uppercase
+        text-align: center
 
-	h1
-		font-size: 96px
+    h1
+        font-size: 96px
 
 .land-img
-	position: absolute
-	display: block
+    position: absolute
+    display: block
 
-	margin: 0 auto
-	top: 15%
-	left: 0
-	right: 0
+    margin: 0 auto
+    top: 15%
+    left: 0
+    right: 0
 
-	width: 50%
-	height: 300px
+    width: 50%
+    height: 300px
 
-	background-color: $primary-blue
-	opacity: 0.5
-	border: 1px solid blue
-	img
-		width: 100%
-		margin: 0 auto
+    background-color: $primary-blue
+    opacity: 0.5
+    border: 1px solid blue
+    img
+        width: 100%
+        margin: 0 auto
 
 
 .nav-container
-	display: flex
-	justify-content: space-between
+    display: flex
+    justify-content: space-between
 
 .nav-item
-	display: inline-block
+    display: inline-block
 
-.content-header, .content
-	display: inline-block
-	vertical-align: top
+footer
+    position: fixed
+    left: 0
+    bottom: 0
+    width: 100%
+    background-color: $primary-blue
+    color: white
 
-.content-header
-	width: 30%
+// .content-header, .content
+//  display: inline-block
+//  vertical-align: top
 
-.content
-	width: 50%
+// .content-header
+//  width: 30%
+
+// .content
+//  width: 50%
+

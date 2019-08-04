@@ -1,5 +1,12 @@
+.container, .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .container {
-  width: 70%;
+  width: 80%;
 }
 
 .container-fluid {
@@ -8,7 +15,18 @@
   height: 100vh;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: center;
+}
+
+.grid-element {
+  border: 1px solid blue;
+}
+
 .landing {
+  width: 85%;
   background-color: #b0b0b0;
   border: 1px solid blue;
 }
@@ -47,17 +65,13 @@
   display: inline-block;
 }
 
-.content-header, .content {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.content-header {
-  width: 30%;
-}
-
-.content {
-  width: 50%;
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2003fc;
+  color: white;
 }
 
 /*# sourceMappingURL=starter-template2.css.map */
