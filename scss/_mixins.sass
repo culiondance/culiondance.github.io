@@ -1,5 +1,12 @@
 // GENERAL GRID CONSTRUCTION
 
+
+// TODO: this is broken, make a universal grid mixin 
+@mixin build-grid($col, $col-width) // constructs grid
+  display: grid
+  grid-template-columns: repeat(#{$col}, #{$col-width})
+  align-items: center
+
 @mixin auto-fit-grid($min-col-width) // constructs grid
   display: grid
   grid-template-columns: repeat(auto-fit, minmax($min-col-width, 1fr))

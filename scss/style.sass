@@ -13,32 +13,35 @@
 
 // original bootstraps
 .container, .container-fluid
-  padding-right: 15px
-  padding-left: 15px
   margin-right: auto
   margin-left: auto
 
 .container
+  padding: 5% 15px
   width: 80%
 
 .container-fluid
   background-color: $temp-lite-gray
   border: 1px solid blue
+
   min-height: 100vh
 
 .grid
   @include auto-fit-grid(220px)
+  grid-gap: 10px
 
 .grid-element
   // border: 1px solid blue
 
 .landing
   width: 85%
-  background-color: $temp-mid-gray
-  border: 1px solid blue
   h1, h2, p
       text-transform: uppercase
       text-align: center
+
+  background-color: $temp-mid-gray
+  border: 1px solid blue
+
 
 .land-img
   position: absolute
@@ -49,33 +52,38 @@
   left: 0
   right: 0
 
-  width: 50%
-  height: 300px
+  width: 70%
+  height: 80vh
+
+  img
+      width: 100%
+      margin: 0 auto
 
   background-color: $primary-blue
   opacity: 0.5
   border: 1px solid blue
-  img
-      width: 100%
-      margin: 0 auto
 
 .content
   max-height: 95vh
   overflow: auto
 
+// TODO: figure out what the FUCK is up with flex!
 .nav-container
   display: flex
+  flex-flow: row wrap
   justify-content: space-between
 
 .nav-item
-  display: inline-block
+  width: auto
+  z-index: 1
+  text-align: center
+  
 
 footer
   position: fixed
   left: 0
   bottom: 0
   width: 100%
-  background-color: $primary-blue
-  color: white
+  background-color: white
 
 @import "event-tabs"

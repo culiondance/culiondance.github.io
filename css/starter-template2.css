@@ -4,7 +4,7 @@ body {
   font-style: normal;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   font-family: nimbus-sans-extended, sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -20,12 +20,12 @@ html {
 }
 @media screen and (min-width: 320px) {
   html {
-    font-size: calc(14px + 5 * ((100vw - 320px) / 880));
+    font-size: calc(14px + 4 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 
@@ -81,13 +81,12 @@ h3 {
 }
 
 .container, .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .container {
+  padding: 5% 15px;
   width: 80%;
 }
 
@@ -101,6 +100,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   align-items: center;
+  grid-gap: 10px;
 }
 
 .landing {
@@ -120,8 +120,8 @@ h3 {
   top: 15%;
   left: 0;
   right: 0;
-  width: 50%;
-  height: 300px;
+  width: 70%;
+  height: 80vh;
   background-color: #2003fc;
   opacity: 0.5;
   border: 1px solid blue;
@@ -138,11 +138,14 @@ h3 {
 
 .nav-container {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
 .nav-item {
-  display: inline-block;
+  width: auto;
+  z-index: 1;
+  text-align: center;
 }
 
 footer {
@@ -150,8 +153,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #2003fc;
-  color: white;
+  background-color: white;
 }
 
 /* GRIDDED TABS via https://kyusuf.com/post/completely-css-tabs/ */
@@ -205,6 +207,7 @@ footer {
   display: none;
   padding: 20px 30px 30px;
   background: #fff;
+  min-height: 50vh;
   order: 99;
 }
 
