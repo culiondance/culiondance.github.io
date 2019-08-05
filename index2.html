@@ -46,15 +46,15 @@
         <p>dance the evil away!</p>
         <nav class="nav-container">
           <div class="nav-item"><a href="#booking"><p>book a show</p></a></div>
+          <div class="nav-item"><a href="#events"><p>upcoming events</p></a></div>
           <div class="nav-item"><a href="#about"><p>learn more</p></a></div>
-          <!--a href=""><p>join us</p></a-->
+          <div class="nav-item"><a href="#join"><p>join us</p></a></div>
         </nav>
       </div>
 
       <div class="land-img">
         <img src="assets/img/Napa Cabbage - 1278x1132.png">
       </div>
-
     </section>
 
 
@@ -62,11 +62,44 @@
       <div class="grid container">
         <h1 class="grid-element content-header">book a show</h1>
         <div class="grid-element content">
-          <p>Interested in booking us for an upcoming event? Simply email us at <strong>columbiauniversityliondance@gmail.com</strong> with the following information:</p>
-          <h3>Upcoming Events</h3>
-          <button type="button" class="button">List View</button>
-          <button type="button" class="button">Calendar View</button>
+          <p>Interested in booking us for an upcoming event? Simply email us at <strong>columbiauniversityliondance@gmail.com</strong> with the following information:
+            <br>
+            <br>form goes here
+            <br>
+            <br>As we are a student-run club, we operate according to Columbia's academic calendar and member class schedules. As such, <strong>we do not automatically accept shows scheduled during class hours (before 4:00pm on Monday through Thursday), during academic breaks, or shows that take place outside of Manhattan.</strong> Bookings that fall under this criteria will be considered on a case by case basis.</p>
         </div>
+      </div>
+    </section>
+
+    <section id="events" class="container-fluid">
+        <div class="grid container">
+          <h1 class="grid-element content-header">Upcoming Events</h1>
+          <div class="grid-element">
+            <!--event views, can be toggled via tabs.
+              **TODO: need to ensure proper browser compat-->
+            <div class="tabs-grid">
+  
+              <!--list view-->
+              <input name="event-tabs" type="radio" id="list-view" checked="checked" class="input"/>
+              <label for="list-view" class="label grid-element">List View</label>
+              <div class="view-panel">
+                <ul>
+                  <li>google api goes here</li>
+                  <li>nsop</li>
+                  <li>night market</li>
+                </ul>
+              </div>
+  
+              <!--gcalendar embed view-->
+              <input name="event-tabs" type="radio" id="cal-view" class="input"/>
+              <label for="cal-view" class="label grid-element">Calendar View</label>
+              <div class="view-panel">
+                <div class="gcal">
+                  <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Y29sdW1iaWF1bml2ZXJzaXR5bGlvbmRhbmNlQGdtYWlsLmNvbQ&amp;color=%234285F4&amp;showPrint=0&amp;showCalendars=0" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -94,7 +127,7 @@
 
     <footer>
       <p>Full navigation/sitemap here</p>
-      <button type="button" class="button"><a href="#">go back to top</a></button>
+      <a href="#">go back to top</a>
     </footer>
 
     <!-- Bootstrap core JavaScript

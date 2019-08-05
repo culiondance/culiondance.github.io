@@ -1,3 +1,85 @@
+body {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3 {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.landing h1 {
+  text-align: justified;
+}
+
+html {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(14px + 5 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+h1 {
+  font-size: 2.0736rem;
+}
+h1 {
+  font-size: 24.192px;
+}
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: calc(24.192px + 23.058 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 47.25px;
+  }
+}
+
+h2 {
+  font-size: 1.728rem;
+}
+h2 {
+  font-size: 24.192px;
+}
+@media screen and (min-width: 320px) {
+  h2 {
+    font-size: calc(24.192px + 23.058 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 47.25px;
+  }
+}
+
+h3 {
+  font-size: 1.44rem;
+}
+h3 {
+  font-size: 20.16px;
+}
+@media screen and (min-width: 320px) {
+  h3 {
+    font-size: calc(20.16px + 11.34 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  h3 {
+    font-size: 31.5px;
+  }
+}
+
 .container, .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -12,17 +94,13 @@
 .container-fluid {
   background-color: #f0f0f0;
   border: 1px solid blue;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   align-items: center;
-}
-
-.grid-element {
-  border: 1px solid blue;
 }
 
 .landing {
@@ -33,9 +111,6 @@
 .landing h1, .landing h2, .landing p {
   text-transform: uppercase;
   text-align: center;
-}
-.landing h1 {
-  font-size: 96px;
 }
 
 .land-img {
@@ -56,6 +131,11 @@
   margin: 0 auto;
 }
 
+.content {
+  max-height: 95vh;
+  overflow: auto;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -72,6 +152,79 @@ footer {
   width: 100%;
   background-color: #2003fc;
   color: white;
+}
+
+/* GRIDDED TABS via https://kyusuf.com/post/completely-css-tabs/ */
+.input {
+  position: absolute;
+  opacity: 0;
+}
+
+.tabs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: center;
+}
+
+@media screen and (max-width: 320px) {
+  .tabs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+  }
+}
+.label {
+  width: auto;
+  padding: 20px 30px;
+  background: #e5e5e5;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  color: #7f7f7f;
+  transition: background 0.1s, color 0.1s;
+}
+
+.label:hover {
+  background: #d8d8d8;
+}
+
+.label:active {
+  background: #ccc;
+}
+
+.input:focus + .label {
+  box-shadow: inset 0px 0px 0px 3px #2aa1c0;
+}
+
+.input:checked + .label {
+  background: #fff;
+  color: #000;
+}
+
+.view-panel {
+  display: none;
+  padding: 20px 30px 30px;
+  background: #fff;
+  order: 99;
+}
+
+.input:checked + .label + .view-panel {
+  display: block;
+}
+
+/* RESPONSIVE GCAL viahttps://thomas.vanhoutte.be/miniblog/make-google-calendar-iframe-responsive/ */
+.gcal {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+.gcal iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=starter-template2.css.map */

@@ -1,0 +1,62 @@
+/* GRIDDED TABS via https://kyusuf.com/post/completely-css-tabs/ */
+// hide radio button
+.input
+  position: absolute
+  opacity: 0
+
+.tabs-grid
+  @include auto-fit-grid(350px)
+
+// TODO: this seems hacky
+@media screen and (max-width: $min-width)
+  .tabs-grid
+    @include auto-fit-grid(200px)
+
+// tab styles
+.label
+  width: auto
+  padding: 20px 30px
+  background: #e5e5e5
+  cursor: pointer
+  font-weight: bold
+  font-size: 18px
+  color: #7f7f7f
+  transition: background 0.1s, color 0.1s
+
+.label:hover
+  background: #d8d8d8
+
+.label:active
+  background: #ccc
+
+.input:focus + .label
+  box-shadow: inset 0px 0px 0px 3px #2aa1c0
+
+.input:checked + .label
+  background: #fff
+  color: #000
+
+// view-panel styles
+.view-panel
+  display: none
+  padding: 20px 30px 30px
+  background: #fff
+  order: 99
+
+.input:checked + .label + .view-panel
+  display: block
+
+/* RESPONSIVE GCAL viahttps://thomas.vanhoutte.be/miniblog/make-google-calendar-iframe-responsive/ */
+// include link out for mobile
+.gcal
+    position: relative
+    padding-bottom: 75%
+    height: 0
+    overflow: hidden
+
+    iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
