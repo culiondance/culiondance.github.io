@@ -16,6 +16,14 @@ h1 {
 	letter-spacing: 10px;
 }
 
+footer {
+	width: 100%;
+	color: white;
+	background: black;
+	text-align: center;
+	padding: 40px;
+}
+
 .col-md-6 {
 	padding: 35px;
 }
@@ -42,6 +50,21 @@ h1 {
 	border-bottom: 1px solid #ffffff;
 	color: #ffffff;
 
+}
+
+.contact-btn{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+    border: 1px solid black;
+    padding: 15px 30px;
+    display: block;
+    border-radius: 4px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .landing {
@@ -86,17 +109,25 @@ h1 {
 	font-size: 18px;
 	text-transform: uppercase;
 	color: #ffffff;
-	letter-spacing: 7px;	
-	line-height: 1.3em;
+	letter-spacing: 5px;	
+	line-height: 1.5em;
 	background-color: transparent;
 	border: 1px solid #ffffff;
 	margin: 5px;
+	padding: 15px 30px;
 }
 
 .btn:hover, .btn:focus{
-	background: #ffffff;
-	color: #333;
+	background: white;
+	color: black;
 }
+
+.contact-btn:hover, .contact-btn:focus{
+	text-decoration: none;
+	background: black;
+	color: #ffffff;
+}
+
 
 .content-block {
 	margin: 10% 0% 10% 0%;
@@ -114,4 +145,36 @@ h1 {
 
 .row h1 {
 	text-align: center;
+}
+
+.copyright{
+	padding: 10px;
+}
+
+.social-media .footerbtn{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	letter-spacing: 3px;	
+	line-height: 1.5em;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	border-radius: 4px;
+	padding: 5px 10px 0px;
+	margin: 5px;
+}
+
+.footerbtn:hover, .footerbtn:hover .fa {
+	color: black;
+	background: white;
+}
+
+.fa {
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+	background: transparent;
+	color: white;
 }
