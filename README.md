@@ -1,2 +1,2 @@
 # culd
-the lion dance website is UGLY
+the lion dance website
