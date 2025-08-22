@@ -1,2 +1,3 @@
 # culd
-the lion dance website
+Columbia University Lion Dance Website
+(last updated June 2025)
