@@ -13,6 +13,7 @@ Development tools:
 Hosted with GitHub Pages
 
 # File Structure
+```
 CULIONDANCE/
 │
 ├── assets/             # Images, icons, and other media
@@ -23,7 +24,7 @@ CULIONDANCE/
 ├── index.html          # Main HTML file
 ├── index2.html         # Alternate HTML version
 └── README.md           # Documentation
-
+```
 (last updated June 2025)
 
 # Setup Instructions
