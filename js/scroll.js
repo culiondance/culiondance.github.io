@@ -4,11 +4,11 @@ window.addEventListener("load", () => {
   //delay for unfurling effect
   setTimeout(() => {
     overlay.classList.add("unfurling");
-  }, 350);
+  }, 200);
 
   // Fade out after scroll fully slides
   setTimeout(() => {
     overlay.classList.add("hidden");
-  }, 3000);
+  }, 2000);
 });
 

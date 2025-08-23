@@ -23,9 +23,10 @@
 .scroll-piece {
   position: absolute;
   top: 0;
-  width: 49.7vw;
+  width: 49.51vw;
   height: 100vh;
   background:  #fdf6e3;
+  opacity: 87%;
   transition: transform 2s ease-in-out;
   overflow: hidden;
   align-items: center;
@@ -56,11 +57,11 @@
 /* Slide apart animation */
 .scroll-overlay.unfurling .scroll-left {
   transform: translateX(-100vw);
-  transition: transform 2s ease-in-out;
+  transition: transform 1s ease-in;
 }
 .scroll-overlay.unfurling .scroll-right {
   transform: translateX(100vw);
-  transition: transform 2s ease-in-out;
+  transition: transform 1s ease-in;
 }
 
 
