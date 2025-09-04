@@ -1,0 +1,20 @@
+/* Style the navbar links for better visibility */
+.navbar-nav > li > a {
+    color: #000249 !important;
+    font-weight: 500;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    color: #333 !important;
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+
+body {
+    padding-top: 10px; 
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}

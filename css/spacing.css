@@ -1,0 +1,82 @@
+
+/* Decrease gap between landing content and "Who We Are" section */
+.landing {
+   margin-bottom: 0 !important; /* Reduce bottom margin of landing section */
+}
+
+.content-block:first-of-type {
+    margin-top: 0 !important; /* Remove top margin from first content block */
+    padding-top: 30px; /* Add smaller padding instead */
+}
+
+/* Decrease gap between text/button and image grid in "Who We Are" section */
+#info {
+    gap: 20px; /* If using flexbox/grid, reduce gap */
+}
+
+.who-text {
+    margin-top: 0 !important;
+    margin-bottom: 20px; /* Reduce bottom margin of text section */
+    padding-bottom: 10px; /* Add small padding */
+}
+
+.who-container {
+    margin-top: 0 !important; /* Remove top margin from image container */
+    padding-top: 0; /* Remove top padding */
+}
+
+/* Alternative: If the above doesn't work, try targeting the wrapper */
+.who-content-wrapper {
+    margin-bottom: 15px; /* Reduce margin after text content */
+}
+
+/* Increase gap between image grid and "Book A Show" section */
+#info .who-container {
+    margin-bottom: 60px; /* Increase bottom margin of image container */
+    padding-bottom: 40px; /* Add extra padding */
+}
+
+/* Alternative: Add more top spacing to booking section */
+#booking {
+    margin-top: 80px; /* Increase top margin of booking section */
+    padding-top: 60px; /* Add extra top padding */
+}
+
+/* Ensure content blocks have proper spacing */
+.content-block {
+    margin-bottom: 40px; /* Standard bottom margin */
+}
+
+.content-block:last-of-type {
+    margin-bottom: 0; /* Remove bottom margin from last content block */
+}
+
+/* Fine-tune the Who We Are section layout */
+.who-images {
+    margin-top: 10px; /* Small top margin for images */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .landing {
+        margin-bottom: 15px;
+    }
+    
+    .content-block:first-of-type {
+        padding-top: 20px;
+    }
+    
+    .who-text {
+        margin-bottom: 15px;
+    }
+    
+    #info .who-container {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+    }
+    
+    #booking {
+        margin-top: 50px;
+        padding-top: 30px;
+    }
+}
